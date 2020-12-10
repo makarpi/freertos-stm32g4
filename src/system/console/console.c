@@ -4,7 +4,7 @@
 #include "usart.h"
 
 #define WELCOME_MESSAGE     "Hello World!\r\n" \
-                            "STM32F767ZI 216MHz\r\n"
+                            "STM32G474 170MHz\r\n"
 
 static void console_putWelcomeMessage(void);
 
