@@ -13,6 +13,7 @@
 #include "stm32g4xx_ll_exti.h"
 #include "stm32g4xx_ll_dac.h"
 #include "stm32g4xx_ll_hrtim.h"
+#include "stm32g4xx_ll_i2c.h"
 #include "stm32g4xx_ll_rcc.h"
 #include "stm32g4xx_ll_bus.h"
 #include "stm32g4xx_ll_crs.h"

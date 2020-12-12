@@ -54,15 +54,18 @@ AS_DEFS =
 
 INC_DIRS = hardware/core
 INC_DIRS += hardware/hrtim
+INC_DIRS += hardware/i2c
 INC_DIRS += hardware/led
 INC_DIRS += hardware/usart
 INC_DIRS += hardware/utils
 INC_DIRS += system/console
+INC_DIRS += system/mems
 INC_DIRS += lib/CMSIS/Device/ST/STM32G4xx/Include
 INC_DIRS += lib/CMSIS/Include
 INC_DIRS += lib/FreeRTOS/org/Source/include
 INC_DIRS += lib/FreeRTOS/org/Source/portable/GCC/ARM_CM4F
 INC_DIRS += lib/STM32G4xx_HAL_Driver/Inc
+INC_DIRS += lib/STMems_Standard_C_drivers/lsm6dso_STdC/driver
 
 # library directories (absolute or relative paths to additional folders with
 # libraries)
@@ -77,13 +80,16 @@ LIBS = -lm -lc
 
 SRCS_DIRS += hardware/core
 SRCS_DIRS += hardware/hrtim
+SRCS_DIRS += hardware/i2c
 SRCS_DIRS += hardware/led
 SRCS_DIRS += hardware/usart
 SRCS_DIRS += system/console
-SRCS_DIRS += lib/STM32G4xx_HAL_Driver/Src
+SRCS_DIRS += system/mems
 SRCS_DIRS += lib/FreeRTOS/org/Source
 SRCS_DIRS += lib/FreeRTOS/org/Source/portable/GCC/ARM_CM4F
 SRCS_DIRS += lib/FreeRTOS/org/Source/portable/MemMang
+SRCS_DIRS += lib/STM32G4xx_HAL_Driver/Src
+SRCS_DIRS += lib/STMems_Standard_C_drivers/lsm6dso_STdC/driver
 
 # extension of C++ files
 CXX_EXT = cpp

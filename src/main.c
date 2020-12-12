@@ -11,6 +11,7 @@
 
 #include "led.h"
 #include "console.h"
+#include "mems.h"
 
 #include "FreeRTOS.h"
 #include "task.h"
@@ -31,7 +32,8 @@ int main(void)
 
   leds_init();
   console_init();
-
+  Mems_Init();
+  
   GPIO_InitStruct.Pin = LL_GPIO_PIN_8;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
